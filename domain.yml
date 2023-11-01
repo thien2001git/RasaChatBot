@@ -1,0 +1,45 @@
+version: "3.1"
+
+intents:
+  - dau_dau
+  - tra_loi_moi_dau_dau_1_ngay
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_hoi_thoi_gian_dau_dau:
+  - text: "Bạn đau đầu lâu chưa?"
+  utter_tra_loi_thuoc_paracenadol:
+  - text: "Thế thì bạn uống Paracenadol nhé! ^_^"
+  utter_tra_loi_thuoc_panadol:
+    - text: "Thế thì bạn uống Panadol nhé! ^_^"
+
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

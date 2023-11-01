@@ -1,0 +1,38 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: dau_dau
+  - action: utter_hoi_thoi_gian_dau_dau
+  - intent: tra_loi_moi_dau_dau_1_ngay
+  - action: utter_tra_loi_thuoc_paracenadol
+
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
